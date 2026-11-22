@@ -1,0 +1,3 @@
+[workspace]
+members = ["conceptos", "ejercicios/*", "proyecto-calculadora"]
+resolver = "3"
