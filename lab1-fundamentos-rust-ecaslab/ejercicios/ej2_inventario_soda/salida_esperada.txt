@@ -1,0 +1,6 @@
+Inventario:
+  café: 35
+  empanadas: 20
+Errores (2):
+  formato inválido: 'gallo pinto'
+  cantidad inválida: 'jugo,muchos'

@@ -1,0 +1,10 @@
+[package]
+name = "ej1_calificaciones"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[lints.clippy]
+# La solución del Anexo A usa dos `if` anidados por claridad.
+collapsible_if = "allow"
