@@ -1,0 +1,5 @@
+Ana: 91.67
+Luis: 67.50
+Valeria: sin notas
+Diego: 96.50
+Mejor promedio: Diego

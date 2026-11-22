@@ -1,0 +1,116 @@
+# ==========================================
+# Rust / Cargo
+# ==========================================
+# Artefactos de compilación
+/target/
+**/target/
+
+# Archivos de respaldo generados por rustfmt
+**/*.rs.bk
+
+# Información de depuración (Windows / MSVC)
+*.pdb
+
+# Datos de cobertura y profiling
+*.profraw
+*.profdata
+/coverage/
+tarpaulin-report.html
+lcov.info
+
+# Nota: Cargo.lock SÍ se versiona en proyectos binarios (ejecutables),
+# incluidos los de conceptos/, ejercicios/ y proyecto-calculadora/.
+# Descomenta la siguiente línea solo si esto se convierte en una librería.
+# Cargo.lock
+
+# ==========================================
+# Binarios generados al compilar con rustc directamente
+# (p. ej. `rustc conceptos/examples/s3_01_variables.rs`)
+# ==========================================
+# Ejecutables sin extensión junto a los .rs de práctica
+conceptos/examples/*
+!conceptos/examples/*.rs
+conceptos/errores-comunes/*
+!conceptos/errores-comunes/*.rs
+!conceptos/errores-comunes/*.sh
+
+# Ejecutables y objetos según plataforma
+*.exe
+*.o
+*.obj
+*.d
+*.rlib
+*.dSYM/
+
+# ==========================================
+# macOS
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.DocumentRevisions-V100
+
+# ==========================================
+# Windows
+# ==========================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================
+# Linux
+# ==========================================
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ==========================================
+# Editores e IDEs
+# ==========================================
+# VS Code (se conservan configuraciones compartibles)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# JetBrains (RustRover, CLion, IntelliJ)
+.idea/
+*.iml
+*.iws
+out/
+
+# Vim / Emacs / otros
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.temp
+\#*\#
+.\#*
+
+# ==========================================
+# Logs y archivos temporales
+# ==========================================
+*.log
+logs/
+tmp/
+temp/
+
+# ==========================================
+# Variables de entorno y secretos
+# ==========================================
+.env
+.env.*
+!.env.example

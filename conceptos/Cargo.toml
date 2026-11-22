@@ -1,0 +1,20 @@
+[package]
+name = "conceptos"
+version = "0.1.0"
+edition = "2024"
+description = "Ejemplos de la sección 3 del Laboratorio 1: Fundamentos de Rust"
+publish = false
+
+# Cada archivo de examples/ es un programa independiente:
+#   cargo run -p conceptos --example s3_05_ownership
+
+[dependencies]
+rand = "0.10.3"
+
+# Los ejemplos reproducen el código del documento tal cual, aunque clippy
+# sugiera otras formas. Cada sugerencia es un buen ejercicio de repaso.
+[lints.clippy]
+approx_constant = "allow"   # 3.9 y 3.11 usan 3.14159 en vez de std::f64::consts::PI
+ptr_arg = "allow"           # 3.6 usa &String; la sección 3.7 explica por qué &str es mejor
+redundant_slicing = "allow" # 3.7 muestra &texto[..] para ilustrar el rango completo
+vec_init_then_push = "allow" # 3.12 muestra Vec::new() + push paso a paso
