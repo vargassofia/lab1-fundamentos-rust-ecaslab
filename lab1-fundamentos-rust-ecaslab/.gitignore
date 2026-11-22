@@ -18,9 +18,29 @@
 tarpaulin-report.html
 lcov.info
 
-# Nota: Cargo.lock SÍ se versiona en proyectos binarios (ejecutables).
+# Nota: Cargo.lock SÍ se versiona en proyectos binarios (ejecutables),
+# incluidos los de conceptos/, ejercicios/ y proyecto-calculadora/.
 # Descomenta la siguiente línea solo si esto se convierte en una librería.
 # Cargo.lock
+
+# ==========================================
+# Binarios generados al compilar con rustc directamente
+# (p. ej. `rustc conceptos/examples/s3_01_variables.rs`)
+# ==========================================
+# Ejecutables sin extensión junto a los .rs de práctica
+conceptos/examples/*
+!conceptos/examples/*.rs
+conceptos/errores-comunes/*
+!conceptos/errores-comunes/*.rs
+!conceptos/errores-comunes/*.sh
+
+# Ejecutables y objetos según plataforma
+*.exe
+*.o
+*.obj
+*.d
+*.rlib
+*.dSYM/
 
 # ==========================================
 # macOS
